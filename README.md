@@ -1,5 +1,5 @@
 # Bills
-Monthly bill app - vue + laravel
+Monthly bill app created in vue and served with laravel
 
 ## Installation
 * Clone the repo
