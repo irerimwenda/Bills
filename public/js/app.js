@@ -2043,7 +2043,16 @@ __webpack_require__.r(__webpack_exports__);
         });
 
         _this3.$Progress.finish();
-      })["catch"](function () {});
+      })["catch"](function () {
+        //error
+        _this3.$Progress.fail();
+
+        $('#addNewCenter').modal('hide');
+        Toast.fire({
+          type: 'error',
+          title: 'Something is wrong. Try again!'
+        });
+      });
     },
     updateBill: function updateBill() {
       var _this4 = this;
@@ -63117,8 +63126,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\Projects\Vue.Js\trial-1\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! F:\Projects\Vue.Js\trial-1\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! F:\Projects\Vue.Js\monthly-billing\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! F:\Projects\Vue.Js\monthly-billing\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

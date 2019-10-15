@@ -204,7 +204,13 @@
                     this.$Progress.finish();
                 })
                 .catch(() => {
-                    
+                    //error
+                    this.$Progress.fail();
+                    $('#addNewCenter').modal('hide');
+                    Toast.fire({
+                        type: 'error',
+                        title: 'Something is wrong. Try again!'
+                      })
                 });
             },
             updateBill() {
